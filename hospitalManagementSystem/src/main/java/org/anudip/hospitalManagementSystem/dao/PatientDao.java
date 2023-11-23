@@ -14,4 +14,6 @@ public interface PatientDao {
 	public int generateNewPatientId();
 
 	public List<Integer> getAllPatientIds();
+	
+	public List<Integer> getAdmittedPatientIds();
 }

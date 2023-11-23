@@ -3,6 +3,7 @@ package org.anudip.hospitalManagementSystem.bean;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+//Bean Class
 @Entity
 public class Ward {
 	@Id

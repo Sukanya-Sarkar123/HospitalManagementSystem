@@ -42,5 +42,10 @@ public class PatientDaoImpl implements PatientDao {
 	public List<Integer> getAllPatientIds() {
 		return repository.getAllPatientIds();
 	}
+	
+	@Override
+	public List<Integer> getAdmittedPatientIds() {
+		return repository.getAddmitedPatientIds();
+	}
 
 }

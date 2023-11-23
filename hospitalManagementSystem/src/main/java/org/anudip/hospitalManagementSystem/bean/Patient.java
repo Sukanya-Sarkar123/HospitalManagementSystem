@@ -10,7 +10,7 @@ public class Patient {
 	private Integer patientNumber;
 	private String patientName;
 	private String patientAddress;
-	private Integer contactNo;
+	private Long contactNo;
 	private String gender;
 	private String caseType;
 	private String wardId;
@@ -20,7 +20,7 @@ public class Patient {
 	private Integer doctorVisits;
 	private Double doctorFees;
 	private Double medicalExp;
-	
+	private Double wardExp;
 	
 	
 	public Patient() {
@@ -29,7 +29,7 @@ public class Patient {
 	}
 	
 	
-	public Patient(Integer patientNumber, String patientName, String patientAddress, Integer contactNo, String gender,
+	public Patient(Integer patientNumber, String patientName, String patientAddress, Long contactNo, String gender,
 			String caseType, String wardId, String addmissionDate, String doctorId) {
 		super();
 		this.patientNumber = patientNumber;
@@ -44,7 +44,7 @@ public class Patient {
 	}
 
 
-	public Patient(Integer patientNumber, String patientName, String patientAddress, Integer contactNo, String gender,
+	public Patient(Integer patientNumber, String patientName, String patientAddress, Long contactNo, String gender,
 			String caseType, String wardId, String addmissionDate, String releasedDate, String doctorId,
 			Integer doctorVisits, Double doctorFees, Double medicalExp) {
 		super();
@@ -70,6 +70,14 @@ public class Patient {
 	}
 
 
+	public Double getWardExp() {
+		return wardExp;
+	}
+
+	public void setWardExp(Double wardExp) {
+		this.wardExp = wardExp;
+	}
+
 	public Integer getPatientNumber() {
 		return patientNumber;
 	}
@@ -88,10 +96,10 @@ public class Patient {
 	public void setPatientAddress(String patientAddress) {
 		this.patientAddress = patientAddress;
 	}
-	public Integer getContactNo() {
+	public Long getContactNo() {
 		return contactNo;
 	}
-	public void setContactNo(Integer contactNo) {
+	public void setContactNo(Long contactNo) {
 		this.contactNo = contactNo;
 	}
 	public String getGender() {

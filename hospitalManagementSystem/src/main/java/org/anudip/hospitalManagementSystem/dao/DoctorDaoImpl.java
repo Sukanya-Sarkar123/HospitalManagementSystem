@@ -46,5 +46,4 @@ public class DoctorDaoImpl implements DoctorDao {
 		return repository.getAllDoctorIds();
 	}
 
-
 }

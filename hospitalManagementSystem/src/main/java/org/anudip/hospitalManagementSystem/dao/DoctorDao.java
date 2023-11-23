@@ -1,7 +1,6 @@
 package org.anudip.hospitalManagementSystem.dao;
 
 import java.util.List;
-
 import org.anudip.hospitalManagementSystem.bean.Doctor;
 
 public interface DoctorDao {
@@ -15,5 +14,3 @@ public interface DoctorDao {
 
 	public List<String> getAllDoctorIds();
 }
-
-
